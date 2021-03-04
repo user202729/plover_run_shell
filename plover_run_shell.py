@@ -1,5 +1,5 @@
 '''
-something
+Execute shell command in Plover using strokes.
 '''
 
 import os
