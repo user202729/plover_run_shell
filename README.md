@@ -3,7 +3,8 @@
 Command plugin for [Plover](https://github.com/openstenoproject/plover) to run an arbitrary shell
 command.
 
-The package is available on [GitHub](https://github.com/user202729/plover_run_shell).
+The package is available on [GitHub](https://github.com/user202729/plover_run_shell) and
+[PyPI](https://pypi.org/project/plover-run-shell/).
 
 ## Usage
 
