@@ -39,26 +39,26 @@ this plugin and use Plover's key combination syntax.
 
 * Shutting down the machine
 
-		"{PLOVER:SHELL:\\{ sleep 2s;poweroff; \\}&}{PLOVER:QUIT}"
+      "{PLOVER:SHELL:\\{ sleep 2s;poweroff; \\}&}{PLOVER:QUIT}"
 
 * Restart Plover (console GUI, in a new terminal)
 
-		"{PLOVER:SHELL:xterm -e bash -c \"sleep 0.5s; plover --gui console\" &}{PLOVER:QUIT}"
+      "{PLOVER:SHELL:xterm -e bash -c \"sleep 0.5s; plover --gui console\" &}{PLOVER:QUIT}"
 
 * Change brightness
 
-		"{PLOVER:SHELL:xbacklight -10}"
-		"{PLOVER:SHELL:xbacklight +10}"
+      "{PLOVER:SHELL:xbacklight -10}"
+      "{PLOVER:SHELL:xbacklight +10}"
 
 * Change volume (note that the solution with `pactl` is not robust because it relies on the sink
   number being 0)
 
-		"{PLOVER:SHELL:pactl set-sink-volume 0 -5%}"
-		"{PLOVER:SHELL:pactl set-sink-volume 0 +5%}"
-		"{PLOVER:SHELL:amixer -D pulse sset Master 5%+}"
-		"{PLOVER:SHELL:amixer -D pulse sset Master 5%-}"
+      "{PLOVER:SHELL:pactl set-sink-volume 0 -5%}"
+      "{PLOVER:SHELL:pactl set-sink-volume 0 +5%}"
+      "{PLOVER:SHELL:amixer -D pulse sset Master 5%+}"
+      "{PLOVER:SHELL:amixer -D pulse sset Master 5%-}"
 
 * Suspend (depends on your GNU/Linux distribution)
 
-		"{PLOVER:SHELL:systemctl suspend}"
-		"{PLOVER:SHELL:pm-suspend}"
+      "{PLOVER:SHELL:systemctl suspend}"
+      "{PLOVER:SHELL:pm-suspend}"
