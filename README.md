@@ -6,6 +6,16 @@ command.
 The package is available on [GitHub](https://github.com/user202729/plover_run_shell) and
 [PyPI](https://pypi.org/project/plover-run-shell/).
 
+## Common issues
+
+The subprocess inherits Plover's environment, and some plugins might set some environment variables.
+
+For instance, on some operating systems, [`plover-debugging-console`](https://github.com/user202729/plover-debugging-console)
+may set `PAGER` environment variable. (see [issue #2](https://github.com/user202729/plover_run_shell/issues/2))
+You may want to unset them explicitly, for example on systems with `env`:
+
+    env -uPAGER -uGIT_PAGER xterm
+
 ## Usage
 
 In order to use this plugin in [Plover](https://github.com/openstenoproject/plover) you need to
