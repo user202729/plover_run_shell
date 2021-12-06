@@ -16,6 +16,9 @@ You may want to unset them explicitly, for example on systems with `env`:
 
     env -uPAGER -uGIT_PAGER xterm
 
+Alternatively, install a sufficiently new version of package `background-zmq-ipython`,
+see README of [`plover-debugging-console`](https://github.com/user202729/plover-debugging-console) for more details.
+
 ## Usage
 
 In order to use this plugin in [Plover](https://github.com/openstenoproject/plover) you need to
